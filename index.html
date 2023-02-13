@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> 
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <title>Document</title>
+    
+  </head>
+  
+  <body>
+    <!-- Navbar with Sidebar -->
+    <nav class="navbar  fixed-top" style="  background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(243, 79, 79));
+;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand pgTitle" href="#">H&S Sellers</a>
+        <input class="search" type="text" placeholder="Search for anything">
+        <a href="#"><i class="ri-search-line search_img"></i></a>
+        <a href="#" class="advanced_search_link" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Advanced Search</a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 6.414L.757 3.172l1.415-1.415L5.414 5h15.242a1 1 0 0 1 .958 1.287l-2.4 8a1 1 0 0 1-.958.713H6v2h11v2H5a1 1 0 0 1-1-1V6.414zM6 7v6h11.512l1.8-6H6zm-.5 16a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm12 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg></a>
+        <a  href="SignIn.html" target="_blank" class="btn SignIn_btn">SignIn</a>
+        <div class="dropdown" style="position: absolute; left: 1000px;">
+          <a class="btn btn-secondary dropdown-toggle dropdown1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EN-English</a></li>
+            <li><a class="dropdown-item" href="#">Pr-Portugese</a></li>
+            
+          </ul>
+        </div>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"  aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categories</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+
+              <li class="nav-item dropdown" data-bs-target="#submenu1">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" data-bs-target="#submenu1">
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <div class="dropdown">
+                <a class="dropdown-toggle" style="text-decoration: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li class="dropdown dropend">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Multilevel Action 1</a>
+                        <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Multilevel Action 2</a>
+                                <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu2">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" style="width: 10px;" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Submenu &raquo;
+                  </a>
+                  <ul class="dropdown-menu dropdown-submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">Submenu item 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Submenu item 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                      <ul class="dropdown-menu dropdown-submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">Multi level 1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Multi level 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Submenu item 4</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Submenu item 5</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>   
+    
+    <!-- Carousel -->
+    <div class="caro">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="position:relative; top: 80px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/assets/img/toys.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="Slide_label">Toys For Kids</h5>
+                  <p class="Slide_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, dolores. Autem, rerum?.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/assets/img/h1.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="/assets/img/c1.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!-- Featured Items -->
+    <span class="featured_title"><h2 class="featured_heading text-decoration-underline">Featured Items</h2></span>
+    <span class="view_all_for_featured"><a href="#">view all</a></span>
+    <div class="featured_container">
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+        <p class="pic_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iste?</p>
+        <h5 class="price">$2345.66</h5>
+        <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>
+      </div>
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+       <p class="pic_desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum modi itaque.</p>
+       <h5 class="price">$2345.66</h5>
+       <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>
+       </div>
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+        <p class="pic_desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum modi itaque.</p> 
+        <h5 class="price">$2345.66</h5>
+        <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>   
+      </div>
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+        <p class="pic_desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum modi itaque.</p>
+        <h5 class="price">$2345.66</h5>
+        <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>
+
+      </div>  
+    </div>
+    <div class="featured_container2">
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+        <p class="pic_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iste?</p>
+        <h5 class="price">$2345.66</h5>
+        <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>
+      </div>
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+       <p class="pic_desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum modi itaque.</p>
+       <h5 class="price">$2345.66</h5>
+       <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>
+       </div>
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+        <p class="pic_desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum modi itaque.</p> 
+        <h5 class="price">$2345.66</h5>
+        <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>   
+      </div>
+      <div class="featured_items">
+        <img src="/assets/img/f1.jpg" alt="">
+        <p class="pic_desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dolorum modi itaque.</p>
+        <h5 class="price">$2345.66</h5>
+        <section class="bids_days">
+          <p class="bids">Bids=0</p>
+          <p class="days">4d:23h:20m</p>
+          <a href="#">Bid now</a>
+       </section>
+
+      </div>  
+    </div>
+
+    <!-- Top Categories -->
+    <span class="top_title"><h2 class="top_category_heading text-decoration-underline text-center">Top Categories</h2></span>
+    <span class="view_all_for_top_cat"><button class="btn btn-primary" href="#">view all</button></span>
+    <div class="top_categories_container">
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+      <div class="top_category">
+        <img src="/assets/img/toys.jpg" alt="">
+        <h3>top category</h3>
+        <a href="#">view all items</a>
+      </div>
+    </div>
+
+    <!-- Before Footer -->
+    <div class="before_footer text-center">
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptas!</h4>
+      <button class="btn btn-success ">Get Auction Notifications</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="container footer bg-dark">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-4">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <hr>
+          <hr>
+          <p style="color: white;position: absolute;left: 550px;">© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Advanced search popover menu -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <input class="form-control" id="message-text"></input>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <input class="form-control" id="message-text"></input>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="instructions">(Click to expand and select states to filter)</div>
+              <div class="dropdown_container">
+                <div class="dropdown_button noselect">
+                  <div class="dropdown_label">States</div>
+                  <div class="dropdown_quantity">(<span class="quantity">Any</span>)</div>
+        <i class="fa fa-filter"></i>
+    </div>
+    <div class="dropdown_list" style="display: none;">
+        <input type="search" placeholder="Search states" class="dropdown_search"/>
+        <ul class="ul"></ul>
+    </div>
+</div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/js/javaScript.js"></script>
+</html>
+
