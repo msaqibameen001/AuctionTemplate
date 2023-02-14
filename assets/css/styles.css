@@ -641,3 +641,18 @@ body{
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+
+.table_head{
+  display: flex;
+}
+.table_head a{
+  margin-left:790px ;
+}
+.UserManagement_Search{
+  position:relative;
+  left: 300px;
+  top: -30px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid green;
+}
