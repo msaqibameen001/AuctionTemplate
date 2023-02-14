@@ -1,0 +1,643 @@
+/* body {
+  height: 10000px;
+} */
+/* Navbar with Sidebar */
+html{
+  height: 100%;
+}
+.pgTitle {
+  position: fixed;
+  left: 123px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 23px;
+  font-weight: bolder;
+  color: brown;
+}
+
+.search {
+  position: fixed;
+  left: 370px;
+  width: 400px;
+  border-radius: 15px;
+  height: 40px;
+  padding-bottom: 6px;
+}
+
+.search:hover {
+  border-color: orange;
+}
+
+.search::placeholder {
+  color: rgb(187, 183, 183);
+  font-style: italic;
+}
+
+.search_img {
+  position: absolute;
+  bottom: 30px;
+  left: 740px;
+  width: 10px;
+  height: 10px;
+}
+
+.search_img:hover {
+  color: aquamarine;
+}
+
+.advanced_search {
+  position: absolute;
+  left: 780px;
+  font-size: 12px;
+}
+
+/* cart icon on hover */
+svg:hover {
+  fill: blue;
+}
+
+svg {
+  position: absolute;
+  left: 1300px;
+  bottom: 12px;
+}
+
+.SignIn_btn {
+  position: absolute;
+  left: 1140px;
+  width: 100px;
+  background-color: rgb(4, 92, 51);
+  color: white;
+}
+
+.SignIn_btn:hover {
+  background-color: rgb(78, 163, 114);
+}
+
+.Slide_label {
+  font-size: 40px;
+  color: rgb(36, 3, 66);
+  font-weight: bolder;
+  position: absolute;
+  bottom: 130px;
+  left: 300px;
+}
+
+.Slide_desc {
+  position: absolute;
+  bottom: 90px;
+  left: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(242, 241, 248);
+}
+
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -9px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+  display: block;
+}
+
+
+/* Featured_container and Featured_items css */
+.featured_container {
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+.featured_container2 {
+  display: flex;
+  position: relative;
+  top: 150px;
+}
+
+.featured_items img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.featured_title {
+  position: relative;
+  top: 80px;
+  color: rgb(3, 71, 49);
+  margin-left: 80px;
+  font-family: fantasy;
+}
+
+.view_all_for_featured {
+  position: relative;
+  top: 45px;
+  left: 1200px;
+}
+
+
+.featured_heading {
+  padding-left: 40px;
+}
+
+.featured_items {
+  margin-right: 40px;
+  margin-left: 40px;
+  width: 500px;
+  border-right: 1px solid rgb(212, 209, 209);
+  border-left: 1px solid rgb(212, 209, 209);
+  border-bottom: 1px solid rgb(212, 209, 209);
+  box-shadow: 0 2px rgb(212, 209, 209);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 20px;
+  transition: all 0.3s ease-in;
+}
+
+.featured_items img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.pic_desc {
+  position: relative;
+  left: 23px;
+  padding-right: 54px;
+}
+
+.price {
+  position: relative;
+  left: 23px;
+}
+
+.bids_days {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  padding-top: 23px;
+}
+
+.bids {
+  font-size: 15px;
+  color: rgb(143, 141, 140);
+}
+
+
+/* CSS For Top Categories */
+
+.top_categories_container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  row-gap: 60px;
+  position: relative;
+  top: 230px;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_category img {
+  width: 203px;
+  /* border-radius: 72px; */
+  height: 149px;
+}
+
+.top_category {
+  border-right: 1px solid rgb(212, 209, 209);
+  border-left: 1px solid rgb(212, 209, 209);
+  border-bottom: 1px solid rgb(212, 209, 209);
+  box-shadow: 0 2px rgb(212, 209, 209);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.top_title {
+  position: relative;
+  top: 200px;
+  color: rgb(3, 71, 49);
+  margin-left: 80px;
+  font-family: fantasy;
+}
+
+.view_all_for_top_cat {
+  position: relative;
+  top: 200px;
+  left: 550px;
+}
+
+.view_all_for_top_cat button {
+  width: 300px;
+}
+
+
+.top_category_heading {
+  padding-left: 40px;
+}
+
+/* CSS Before Footer */
+.before_footer {
+  background-color: rgb(17, 78, 131);
+  position: relative;
+  top: 300px;
+}
+
+.before_footer h4 {
+  text-align: center;
+  color: white;
+  padding-right: 350px;
+  padding-left: 350px;
+}
+
+.before_footer button {
+  text-align: center;
+}
+
+/* css footer */
+.footer {
+  position: absolute;
+  top: 2569px;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1349px;
+}
+
+
+
+/* select multiple items in advance search */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown_container,
+.instructions {
+  width: 200px;
+  margin: 20px auto 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+.instructions {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown_button {
+  float: left;
+  width: 100%;
+  background: whitesmoke;
+  padding: 10px 12px;
+
+  cursor: pointer;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+}
+
+.dropdown_label,
+.dropdown_quantity {
+  float: left;
+}
+
+.dropdown_quantity {
+  margin-left: 4px;
+}
+
+.fa-filter {
+  float: right;
+}
+
+
+.dropdown_list {
+  float: left;
+  width: 100%;
+
+  border: 1px solid lightgray;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+
+input[type="search"] {
+  padding: 5px 0;
+}
+
+.ul {
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+
+/* advance search link */
+.advanced_search_link{
+  position: absolute; 
+  left: 780px;
+  font-size: 12px;
+}
+
+
+
+
+
+
+/* Admin_panel Auction */
+
+.entries{
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  top: 47px;
+  left: 120px;
+  font-size: 15px;
+}
+.Auction_search{
+  position: absolute;
+  left: 800px;
+  top: 40px;
+  width: 200px;
+  height: 30px;
+}
+.add_new_auction{
+  position: absolute;
+  /* width: 12px; */
+  height: 34px;
+  font-size: 15px;
+  top: 10px;
+  /* left: 400px; */
+  /* top: 40px; */
+}
+
+/* Notification in Admin Panel */
+.notification{
+  position: absolute;
+  left: 180px;
+  top: 12px;
+}
+
+/* Admin_Panel_message */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.message_select{
+  width: 300px;
+  position: absolute;
+}
+
+.messages_container{
+  display: flex;
+  flex-direction: row;
+}
+
+.message_box{
+  position: absolute;
+  left: 320px;
+  width: 800px;
+  top: 130px;
+}
+
+.list-group-item a{
+  padding-right: 160px;
+}
+
+/* display entries */
+.display_page_entries{
+  position: absolute;
+  top: 610px;
+}
+
+
+
+
+/* AdminPanel_AuctionBtn */
+.container_form{
+ margin-right: 40px;
+}
+textarea{
+  width: 400px;
+}
+
+
+
+
+
+
+
+/* Profile CSS */
+
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+
+.profile-button {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none
+}
+
+.profile-button:hover {
+  background: #682773
+}
+
+.profile-button:focus {
+  background: #682773;
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: #682773;
+  box-shadow: none
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 11px
+}
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8
+}
+
+
+
+/* Manual or Import Product */
+.hide {
+  display: none;
+}
+.div1,.hide{
+  width: 500px;
+  position: absolute;
+  left: 250px;
+  top: 70px;
+  border: 1px dashed green;
+}
+
+
+
+/* product type */
+.hide_Product_type{
+  display: none;
+}
+.div_type,.hide_Product_type{
+  width: 500px;
+  /* position: absolute; */ 
+}
+
+
+/* Auction formatting forms */
+.input_formatting{
+  margin-left:100px ;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 400px;
+}
+.rowsandcol{
+  display: flex;
+  
+}
+.save_btn{
+  position: absolute;
+  width: 150px;
+  height:40px;
+  top: 1580px;
+  left: 400px;
+  bottom: 20px;
+}
+
+.note-editor{
+  position: relative;
+  top:-12px;
+  left: 315px;
+}
+
+
+
+
+
+/* Catalogue Info */
+.Catalogue_Info{
+  display: grid;
+  grid-template-columns: 200px 483px 1px;
+  grid-template-rows: 70px 100px;
+}
+
+
+.sidebarCatalogue{
+  position: fixed;
+}
+
+body{
+  overflow-x: hidden;
+}
+.catalogueInfo{
+  position: absolute;
+  left: 250px;
+  width: 1000px;
+}
+.Entries_Of_Catalogue{
+  width: 70px;
+  height: 40px;
+  position: relative;
+  top: -45px;
+  left: 120px;
+  font-size: 15px;
+}
+.Catalogue_Search{
+  position:relative;
+  left: 300px;
+  top: -30px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid green;
+}
+.Pagination_Catalogue{
+  position: relative;
+  left: 700px;
+}
+.Display_Cat_Entries{
+ position: relative;
+ top: -50px;
+}
+
+
+
+
+/* Super Admin CSS Styles */
+
+
+/* for navbar */
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
