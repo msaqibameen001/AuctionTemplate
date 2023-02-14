@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <!-- Sidebar -->
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark sidebarCatalogue">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <span class="fs-5 d-none d-sm-inline">Menu</span>
+            </a>
+            <a href="AdminPanel_Notification.html"
+              ><i class="ri-notification-3-fill notification"></i
+            ></a>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="AdminPanel.html" class="nav-link align-middle px-0">
+                  <i class="ri-dashboard-fill"></i>
+                  <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="AdminPanel_Auction.html"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="ri-auction-fill"></i>
+                  <span class="ms-1 d-none d-sm-inline">Auction</span></a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="AdminPanel_Notification.html"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="ri-notification-2-fill"></i>
+                  <span class="ms-1 d-none d-sm-inline">Notification</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="AdminPanel_Message.html"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="ri-message-2-fill"></i>
+                  <span class="ms-1 d-none d-sm-inline">Message</span>
+                </a>
+              </li>
+            </ul>
+            <hr />
+            <div class="dropdown pb-4">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="hugenerd"
+                  width="30"
+                  height="30"
+                  class="rounded-circle"
+                />
+                <span class="d-none d-sm-inline mx-1">Admin</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark text-small shadow"
+                aria-labelledby="dropdownUser1"
+              >
+                <li>
+                  <a class="dropdown-item" href="Profile.html">Profile</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="Login.html">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Catalogue Info. -->
+        <div class="col py-3 catalogueInfo">
+          <h3>Catalogue-1</h3>
+          <div class="form-control Catalogue_Details">
+            <div class="cat_det">
+                <span><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></span>
+                <span><p><label for="file" style="cursor: pointer;"><b>Edit Image</b></label></p></span>
+                <span><img id="output" default src="/assets/img/catalogue1.jpg" width="200" /></span>
+                <span><b> Best Machines In Market BY SMH Companies and Ltd.</b></span>
+                <div class="Catalogue_Info">
+                    <span><b>Catalogue No:</b>23456</span>
+                    <span><b>Catalogue Name:</b>Machines</span>
+                    <span><b>Date:</b>23/02/2023-30/02/2023</span>
+                    <span><b>Catalogue Items:</b>25</span>
+              <p>
+                <b>Description:</b>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Beatae quos atque fuga at?Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Eveniet quod odio
+                perferendis corrupti mollitia, atque nesciunt fuga tempore
+                obcaecati deserunt.
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="form-control my-3 col-sm-12 col py-3 ms-1 ">
+            <h5>Items Listed in Catalogue</h5>
+            <!-- Table Sorted -->
+            <div class="row " >
+                
+                <div class="">
+                  <a href="AdminPanel_AuctionBtn.html" class="btn btn-info Add_New_Item">
+                    Add New Item
+                  </a>
+                  <br>
+                  <br>
+                  <p>Show Entries:</p>
+                  <select
+                    class="form-select Entries_Of_Catalogue"
+                    aria-label="Default select example"
+                  >
+                    <option value="1">5</option>
+                    <option value="2">10</option>
+                    <option value="3">25</option>
+                    <option value="3">All</option>
+                  </select>
+                  <input
+                    class="form-control form-control-sm Catalogue_Search "
+                    type="text"
+                    placeholder="search"
+                    aria-label=".form-control-sm example"
+                  />
+        
+                  <table class="table">
+                    <thead class="table-primary">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col" style="width: 200px">Last</th>
+                        <th scope="col">Handle</th>
+                        <th scope="col">ab</th>
+                        <th scope="col">ab</th>
+                        <th scope="col" style="width: 100px">ab</th>
+                        <th scope="col" style="width: 100px">ab</th>
+                        <th scope="col" style="width: 100px">ab</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                       
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <br>
+                  <br>
+                  <nav
+                    aria-label="Page navigation example"
+                    
+                  >
+                    <ul class="pagination Pagination_Catalogue" >
+                      <li class="page-item">
+                        <a class="page-link" href="#">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                  <p class="Display_Cat_Entries">Showing 1 to 11 of 30 entries</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+</html>

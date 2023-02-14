@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+      />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark sidebarCatalogue">
+            <div
+              class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+            >
+              <a
+                href="/"
+                class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+              >
+                <span class="fs-5 d-none d-sm-inline">Menu</span>
+              </a>
+              <a href="BidderPanel_Notification.html"
+                ><i class="ri-notification-3-fill notification"></i
+              ></a>
+              <ul
+                class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                id="menu"
+              >
+                <li class="nav-item">
+                  <a href="BidderPanel.html" class="nav-link align-middle px-0">
+                    <i class="ri-dashboard-fill"></i>
+                    <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                  </a>
+                </li>
+  
+                <li>
+                  <a
+                    href="#submenu1"
+                    data-bs-toggle="collapse"
+                    class="nav-link px-0 align-middle"
+                  >
+                    <i class="ri-auction-fill"></i>
+                    <span class="ms-1 d-none d-sm-inline">Auction</span>
+                  </a>
+                  <ul
+                    class="collapse nav flex-column ms-1"
+                    id="submenu1"
+                    data-bs-parent="#menu"
+                  >
+                    <li class="w-100">
+                      <a href="BidderPanel_FavouriteAuct.html" class="nav-link px-0">
+                        <span class="d-none d-sm-inline">Favourite Auctions</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="BidderPanel_MyAuct.html" class="nav-link px-0">
+                        <span class="d-none d-sm-inline">My Auctions</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="BidderPanel_BoughtAuct.html" class="nav-link px-0">
+                        <span class="d-none d-sm-inline">Bought Auctions</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li>
+                  <a
+                    href="BidderPanel_Notification.html"
+                    class="nav-link px-0 align-middle"
+                  >
+                    <i class="ri-notification-2-fill"></i>
+                    <span class="ms-1 d-none d-sm-inline">Notification</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="BidderPanel_Message.html"
+                    class="nav-link px-0 align-middle"
+                  >
+                    <i class="ri-message-2-fill"></i>
+                    <span class="ms-1 d-none d-sm-inline">Message</span>
+                  </a>
+                </li>
+              </ul>
+              <hr />
+              <div class="dropdown pb-4">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                  id="dropdownUser1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://github.com/mdo.png"
+                    alt="hugenerd"
+                    width="30"
+                    height="30"
+                    class="rounded-circle"
+                  />
+                  <span class="d-none d-sm-inline mx-1">Admin</span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark text-small shadow"
+                  aria-labelledby="dropdownUser1"
+                >
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">Profile</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="Login.html">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row" style="position: absolute; left: 250px; top: 0px">
+        <div class="col-sm-12 col py-3">
+          <h3>Messages</h3>
+          <a href="#"  class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="width: 300px"
+            >New Message</a
+          >
+          <div class="messages_container">
+            <ul class="list-group message_select mt-3">
+              <a href="#" class="list-group-item">All Messages</a>
+              <a href="#" class="list-group-item">Inbox</a>
+              <a href="#" class="list-group-item">Outbox</a>
+            </ul>
+
+            <ul class="list-group message_box">
+              <li class="list-group-item">
+                <a href="#">adil@gmail.com</a>
+                <a href="#">test</a>
+                <a href="#">two months ago</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">adil@gmail.com</a>
+                <a href="#">test</a>
+                <a href="#">two months ago</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#">adil@gmail.com</a>
+                <a href="#">test</a>
+                <a href="#">two months ago</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for New message -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <form class="row g-3">
+              
+              <div class="col-md-12">
+                <label for="validationDefaultUsername" class="form-label">Recipient</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  <input type="email" aria-required="true" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationDefault03" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+              </div>
+              
+              
+              <div class="mb-12">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" required></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Send message</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="/assets/js/javaScript.js"></script> -->
+</html>
