@@ -681,3 +681,10 @@ body{
   left: 300px;
   width: 20px;
 }
+
+/* super Admin message */
+.SupAd_Message{
+  position: absolute;
+  left: 250px;
+  top: 0px
+}
