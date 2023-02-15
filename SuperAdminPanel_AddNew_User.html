@@ -8,18 +8,18 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>Document</title>
   </head>
@@ -55,7 +55,7 @@
 
               <li class="nav-item">
                 <a
-                  href="SuperAdminPanel.html"
+                  href="SuperAdminPanel_UserManagement.html"
                   class="nav-link align-middle px-0"
                 >
                   <i class="ri-user-add-line"></i>
@@ -215,176 +215,129 @@
             </div>
           </div>
         </div>
-        <div class="col py-3 catalogueInfo">
-          <h3>User Management</h3>
-          <div class="form-control my-3 col-sm-12 col">
-            <!-- Table Sorted -->
-            <div class="row">
-              <div class="UserManagement">
-                <div class="table_head">
-                  <h5>List</h5>
-                  <a href="SuperAdminPanel_AddNew_User.html" class="btn btn-success">Add New</a>
-                </div>
-                <hr />
-                <p>Show Entries:</p>
-                <select
-                  class="form-select Entries_Of_Catalogue"
-                  aria-label="Default select example"
-                >
-                  <option value="1">5</option>
-                  <option value="2">10</option>
-                  <option value="3">25</option>
-                  <option value="3">All</option>
-                </select>
-                <input
-                  class="form-control form-control-sm UserManagement_Search"
-                  type="text"
-                  placeholder="search"
-                  aria-label=".form-control-sm example"
-                />
-
-                <table class="table">
-                  <thead class="table-primary">
-                    <tr>
-                      <th scope="col">S.No</th>
-                      <th scope="col">UserName</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Image</th>
-                      <th scope="col">Role</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody class="table-group-divider">
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">8</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">9</th>
-                      <td>Mark</td>
-                      <td>Otto@gmail.com</td>
-                      <td>
-                        <img src="/assets/img/h1.jpg" width="60px" alt="" />
-                      </td>
-                      <td>Seller</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+        <form class="col py-3">
+          <h3>Add New User to the System Database</h3>
+          <div class="form-control">
+            <h5>Users</h5>
+            <hr />
+            <div class="FormUser">
+              <div class="Form_User1">
+                <label for=""><b> Name</b></label>
                 <br />
-                <br />
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination Pagination_Catalogue">
-                    <li class="page-item">
-                      <a class="page-link" href="#">Previous</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">Next</a>
-                    </li>
-                  </ul>
-                </nav>
-                <p class="Display_Cat_Entries">Showing 1 to 11 of 30 entries</p>
+                <input type="text" />
               </div>
+              <div class="Form_User14">
+                <label for=""><b>Slug Name</b></label>
+                <br />
+                <input type="text" />
+              </div>
+              <div class="Form_User2">
+                <label for=""><b> State</b></label>
+                <br />
+                <input type="text" />
+              </div>
+
+              <div class="Form_User3">
+                <label for=""><b> UserName</b></label>
+                <br />
+                <input type="text" />
+              </div>
+              <div class="Form_User4">
+                <label for=""><b> City</b></label>
+                <br />
+                <input type="text" />
+              </div>
+
+              <div class="Form_User5">
+                <label for=""><b> Email</b></label>
+                <br />
+                <input type="text" />
+              </div>
+              <div class="Form_User6">
+                <label for=""><b>Address</b></label>
+                <br />
+                <textarea name="" id="" cols="10" rows="2"></textarea>
+              </div>
+
+              <div class="Form_User7">
+                <label for=""><b> Password</b></label>
+                <br />
+                <input type="text" />
+              </div>
+              <div class="Form_User8">
+                <label for=""><b> Status</b></label>
+                <br />
+                <select
+                  class="selectpicker border border-dark"
+                  aria-label="Default select example"
+                  data-live-search="true"
+                >
+                  <option value="1" selected>Select Status</option>
+                  <option value="2">Approve</option>
+                  <option value="3">Disapprove</option>
+                </select>
+              </div>
+
+              <div class="Form_User8">
+                <label for=""><b> Confirm Password</b></label>
+                <br />
+                <input type="text" />
+              </div>
+              <div class="Form_User9">
+                <label for=""><b> City</b></label>
+                <br />
+                <input type="text" />
+              </div>
+
+              <div class="Form_User10">
+                <label for=""><b> Role</b></label>
+                <br />
+                <select
+                  class="selectpicker border"
+                  aria-label="Default select example"
+                  data-live-search="true"
+                >
+                  <option value="1" selected>Select Role</option>
+                  <option value="2">Super Admin</option>
+                  <option value="3">Admin</option>
+                  <option value="4">Bidder</option>
+                </select>
+              </div>
+              <div class="Form_User11">
+                <label for=""><b> Phone Number</b></label>
+                <br />
+                <input type="text" />
+              </div>
+
+              <div class="Form_User12">
+                <label for=""><b> Country</b></label>
+                <br />
+                <input type="text" />
+              </div>
+              <div class="Form_User13">
+                <label for=""><b> Select Image</b></label>
+                <br />
+                <input
+                  class="form-control"
+                  accept=".jpg,.png,.jpeg"
+                  type="file"
+                  id="formFile"
+                  multiple
+                />
+              </div>
+              <div class="Form_User15">
+                <label for=""><b>Terms and Conditions</b></label>
+                <br />
+                <textarea name="" id="" cols="10" rows="3"></textarea>
+              </div>
+              <div class="d-grid gap-2 d-md-block">  
+              <input class="btn btn-primary Add_UserSaveBtn" type="reset" value="Save and Return">
+            </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </body>
+  <script src="/assets/js/javaScript.js"></script>
 </html>
