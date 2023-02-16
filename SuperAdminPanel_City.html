@@ -26,7 +26,7 @@
     <div class="container-fluid">
       <div class="row flex-nowrap">
         <!-- Sidebar -->
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" style="height: fit-content;">
           <div
             class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
           >
@@ -87,16 +87,16 @@
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="SuperAdminPanel_SubCategory.html"
-                      class="nav-link px-0"
-                    >
+                    <a href="SuperAdminPanel_SubCategory.html" class="nav-link px-0">
                       <i class="ri-file-list-line"></i>
                       <span class="d-none d-sm-inline">Sub Category</span>
                     </a>
                   </li>
                   <li>
-                    <a href="SuperAdminPanel_Brand.html" class="nav-link px-0">
+                    <a
+                      href="SuperAdminPanel_Brand.html"
+                      class="nav-link px-0"
+                    >
                       <i class="ri-book-line"></i>
                       <span class="d-none d-sm-inline">Brand</span>
                     </a>
@@ -143,7 +143,10 @@
                     </a>
                   </li>
                   <li>
-                    <a href="SuperAdminPanel_City.html" class="nav-link px-0">
+                    <a
+                      href="SuperAdminPanel_City.html"
+                      class="nav-link px-0"
+                    >
                       <i class="ri-building-4-line"></i>
                       <span class="d-none d-sm-inline">City</span>
                     </a>
@@ -212,177 +215,118 @@
             </div>
           </div>
         </div>
-        <!-- Master Settings -->
+        <!-- Cities Table -->
         <div class="col py-3">
-          <h3>Master Settings</h3>
-          <div class="form-control my-3 col-sm-12 col">
-            <!-- Table Sorted -->
-            <div class="row">
-              <div class="">
-                <p>Show Entries:</p>
-                <select
-                  class="form-select Entries_Of_Catalogue"
-                  aria-label="Default select example"
-                >
-                  <option value="1">5</option>
-                  <option value="2">10</option>
-                  <option value="3">25</option>
-                  <option value="3">All</option>
-                </select>
-                <input
-                  class="form-control form-control-sm Catalogue_Search"
-                  type="text"
-                  placeholder="search"
-                  aria-label=".form-control-sm example"
-                />
-
-                <table class="table">
-                  <thead class="table-primary">
-                    <tr>
-                      <th scope="col">S.No.</th>
-                      <th scope="col">Module</th>
-                      <th scope="col">Key</th>
-                      <th scope="col">Description</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody class="table-group-divider">
-                    <tr>
-                      <th scope="row">1</th>
-                      <td><a href=""> Auction Settings</a></td>
-                      <td>auction_settings</td>
-                      <td>display settings</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">2</th>
-                      <td><a href=""> Site Settings</a></td>
-                      <td>site setting</td>
-                      <td>manage sites</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td><a href=""> Module Management</a></td>
-                      <td>modules</td>
-                      <td>arrange modules</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td><a href=""> Stripe Settings</a></td>
-                      <td>stripe</td>
-                      <td>striping the settings</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td><a href=""> PayPal Settings</a></td>
-                      <td>paypal</td>
-                      <td>paypal management with bank and card</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td><a href=""> SEO Settings</a></td>
-                      <td>Seo</td>
-                      <td>Seo view</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td><a href=""> Email Settings</a></td>
-                      <td>email</td>
-                      <td>email settings changing and edit</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">8</th>
-                      <td><a href=""> PayU settings</a></td>
-                      <td>payu</td>
-                      <td>Description of Payu</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">9</th>
-                      <td><a href=""> PayU Settings</a></td>
-                      <td>payu</td>
-                      <td>See settings</td>
-                      <td>
-                        <a href="SuperAdminPanel_ViewMasterSetting.html" class="btn btn-primary">View</a>
-                        <br />
-                        <a href="#" class="btn btn-success">Edit</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <br />
-                <br />
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination Pagination_Catalogue">
-                    <li class="page-item">
-                      <a class="page-link" href="#">Previous</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">Next</a>
-                    </li>
-                  </ul>
-                </nav>
-                <p class="Display_Cat_Entries">Showing 1 to 11 of 30 entries</p>
+          <h3>Cities Management</h3>
+          <div class="form-control my-3 col-sm-12 col  ">
+            <div class="row " >
+                <div class="UserManagement">
+                    <div class="table_head">
+                      <h5>List</h5>
+                      <a href="SuperAdminPanel_AddNewCity.html" class="btn btn-success">Add New City</a>
+                    </div>
+                    <hr />
+                <div class="">
+                  <p>Show Entries:</p>
+                  <select
+                    class="form-select Entries_Of_Catalogue"
+                    aria-label="Default select example"
+                  >
+                    <option value="1">5</option>
+                    <option value="2">10</option>
+                    <option value="3">25</option>
+                    <option value="3">All</option>
+                  </select>
+                  <input
+                    class="form-control form-control-sm Catalogue_Search "
+                    type="text"
+                    placeholder="search"
+                    aria-label=".form-control-sm example"
+                  />
+        
+                  <table class="table">
+                    <thead class="table-primary">
+                      <tr>
+                        <th scope="col">S.No.</th>
+                        <th scope="col" >City</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td> Karachi</td>
+                        <td>Pakistan</td>
+                        <td>Sindh</td>
+                        <td>Inactive</td>
+                        <td><a href="SuperAdminPanel_ViewCity.html" class="btn btn-primary">View</a>
+                            <br>
+                            <a href="#" class="btn btn-success">Edit</a></td>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Sialkot</td>
+                        <td>Pakistan</td>
+                        <td>Punjab</td>
+                        <td>Active</td>
+                        <td><a href="SuperAdminPanel_ViewCity.html" class="btn btn-primary">View</a>
+                            <br>
+                            <a href="#" class="btn btn-success">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>New York City</td>
+                        <td>United States</td>
+                        <td>United</td>
+                        <td>Inactive</td>
+                        <td><a href="SuperAdminPanel_ViewCity.html" class="btn btn-primary">View</a>
+                            <br>
+                            <a href="#" class="btn btn-success">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Riyadh</td>
+                        <td>Saudia Arabia</td>
+                        <td>West</td>
+                        <td>Active</td>
+                        <td><a href="SuperAdminPanel_ViewCity.html" class="btn btn-primary">View</a>
+                            <br>
+                            <a href="#" class="btn btn-success">Edit</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Dhaka</td>
+                        <td>Bangladesh</td>
+                        <td>Unknown</td>
+                        <td>Inactive</td>
+                        <td><a href="SuperAdminPanel_ViewCity.html" class="btn btn-primary">View</a>
+                            <br>
+                            <a href="#" class="btn btn-success">Edit</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <br>
+                  <nav
+                    aria-label="Page navigation example"          
+                  >
+                    <ul class="pagination Pagination_Catalogue" >
+                      <li class="page-item">
+                        <a class="page-link" href="#">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                  <p class="Display_Cat_Entries">Showing 1 to 11 of 30 entries</p>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </body>
-
-  <script>
-    var loadFile = function (event) {
-      var image = document.getElementById("output");
-      image.src = URL.createObjectURL(event.target.files[0]);
-    };
-  </script>
 </html>

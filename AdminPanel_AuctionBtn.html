@@ -4,35 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script> -->
+    
     
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
       />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+     
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+      
+     
+      
+      
+
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+   
+   
+    <!-- Summernote CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs5.min.css" rel="stylesheet"> -->
+
+<!-- Summernote JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs5.min.js"></script> -->
+
    
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
     <div class="container-fluid">
       <!-- Sidebar -->
       <div class="row flex-nowrap">
@@ -118,9 +129,10 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- Auction Posts -->
-      <div class="row" style="position:absolute; left: 245px; top: 0px">
-        <div class="col-sm-12 col py-3" >
+      <div class="row" style="position:absolute;left: 246px; top: 0px">
+        <div class="col-sm-12 py-3" >
           <h3 style="display: block;">Auction Posting</h3>
           <hr>
         </div>
@@ -147,7 +159,7 @@
 
 
         <!-- Product Type -->
-        <div class="card mt-4" style="width: 900px;">
+        <!-- <div class="card mt-4" style="width: 900px;">
           <div class="col-sm-12 col py-3">
             <h5>Product Type</h5>
             </div>
@@ -166,7 +178,7 @@
               </select>
             </div>
     <br>
-        </div>
+        </div> -->
         
         <!-- Posting -->
         <div class="card mt-4" style="width: 900px;">
@@ -198,40 +210,38 @@
             </select>
           </div>
           <div class="mt-2" >
-            <label style="margin-left: 170px; font-size: 20px;margin-right: 89px;">Brand</label>
-            <input class="border border-success" >
+            <label style="margin-left: 170px; font-size: 20px;margin-right: 85px;">Brand:</label>
+            <input class="border border-success" style="width:400px" >
           </div>
           
           <div class="mt-2" >
-            <label style="margin-left: 190px; font-size: 20px;">Description</label>
-            <textarea class="border border-success" ></textarea>
+            <label for="summernote" style="margin-left: 170px; font-size: 20px;position: relative; top: 0px;">Description:</label>
+            <textarea  id="summernote">
+              
+            </textarea>
+         
+            
           </div>
-          <div class="mt-2">
-            <label style="margin-left: 190px; font-size: 20px;">Starting Price:</label>
-            <input class="border border-success" ></input>
-          </div>
-          <div class="mt-2">
-            <label style="margin-left: 170px; font-size: 20px;">Maximum Price</label>
+         
+
+          <div class="rowsandcol"> 
+            <label style="margin-left: 150px; font-size: 20px; margin-right: 34px; ">Starting Price:</label>
+            <input class="border border-success"  ></input>
+            <label style=" font-size: 20px;margin-left: 20px;margin-right: 20px;">Maximum Price:</label>
             <input type="number" class="border border-success" ></input>
           </div>
-          <div class="mt-2">
-            <label style="margin-left: 190px; font-size: 20px;">Start Date</label>
-            <input type="date" class="border border-success" style="width: 200px; margin-right: 160px;" id="date">
+          
+          <div class="rowsandcol" style="margin-top: 20px;"> 
+            <label style="margin-left: 120px; font-size: 20px; ">Start day and time:</label>
+            <input type="datetime-local" class="border border-success"  ></input>
+            <label style=" font-size: 20px;margin-left: 10px;">End day and time:</label>
+            <input type="datetime-local" class="border border-success" ></input>
           </div>
-          <div class="mt-2">
-            <label for="" style="margin-left: 190px; font-size: 20px;">End Date</label>
-            <input type="date" class="border border-success" style="width: 200px; margin-right: 160px;" id="date">
-          </div>
-          <div class="mt-2">
-            <label for="appt" style="margin-left: 190px; font-size: 20px;">Start Time:</label>
-            <input class="border border-success" type="time" id="appt" name="appt">
-          </div>
-          <div class="mt-2">
-            <label for="appt" style="margin-left: 190px; font-size: 20px;margin-right: 22px;">End Time:</label>
-            <input class="border border-success" type="time" id="appt" name="appt">
-          </div>
+          
+        
+      </div>
           <!-- Extras to be Seen Later -->
-          extras
+          <!-- extras
           <div class="mt-2" style="font-weight:lighter;">
             Price: <input type="number" class="border border-success" ></input>
           </div>
@@ -266,8 +276,8 @@
             </div>
             <div class="mt-2" style="font-weight:lighter;">
               Auction Desc: <textarea class="border border-success" ></textarea>
-              </div>
-        </div>
+              </div> -->
+        
 
 
         <!-- Location Info -->
@@ -275,6 +285,7 @@
             <div class="col-sm-12 col py-3">
             <h5>Location Info</h5>
             </div>
+            <label style="margin-left: 170px; font-size: 20px;margin-right: 47px;">Country:</label>
             <select class="selectpicker border border-success"  aria-label="Default select example" data-live-search="true" style="margin-left: 40px;" >
               <option value="  " selected>Select a country</option>
     <option value="--">Not Specified</option>
@@ -519,9 +530,51 @@
     <option value="ZW">Zimbabwe</option>
             </select>
             
-          
-          
+            <label style="margin-left: 168px; font-size: 20px;margin-right: 85px;margin-top:12px">City:</label>
+            <select class="selectpicker border border-success"  aria-label="Default select example" data-live-search="true" style="margin-left: 40px;" >
+            <option value="SA">North</option>
+            <option value="SA">New Karachi</option>
+            <option value="SA">Nazimabad</option>
+            </select>
+
+            <label style="margin-left: 157px; font-size: 20px;margin-right: 85px;margin-top:12px">State:</label>
+            <select class="selectpicker border border-success"  aria-label="Default select example" data-live-search="true" style="margin-left: 40px;" >
+            <option value="SA">North</option>
+            <option value="SA">New Karachi</option>
+            <option value="SA">Nazimabad</option>
+            </select>
+
+            <label for="" style="margin-left:137px;font-size: 20px;margin-right:45px;margin-top: 12px;" >Postal Code:</label>
+            <input class="border border-success" type="text" style="width:400px" >
+
+            <div class="mt-2" style="position: relative;left: 200px;font-size: 20px;">Is it Bid Increment: 
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">YES</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">NO</label>
+              </div>
         </div>
+
+
+        <div class="mt-2" >
+          <label style="margin-left: 100px; font-size: 20px;margin-right: 40px;" for="">Bid Increment($):</label>
+          <input class="container_form border border-success" type="text" style="width: 400px;height: 45px;"></div>
+       
+
+        <div class="mt-2" style="position: relative;left: 200px;font-size: 20px;">Is Featured?: 
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">YES</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">NO</label>
+          </div>
+    </div>
+    </div>
 
 
         <!-- Image and Video -->
@@ -534,17 +587,26 @@
             
             <input class="form-control" accept=".jpg,.png,.jpeg" type="file" id="formFile" multiple>
           </div>
-          <div class="mt-2" style="font-weight:lighter;">
-            Video Url: <input class="border border-success" >
+          <div class="mt-2" >
+            <label style="margin-left: 168px; font-size: 20px;margin-right: 85px;margin-top:12px;margin-bottom: 12px;">Video Url:</label>
+            <input class="border border-success" style="width:400px" >
           </div>
        
         
-        
+         
       </div>
-        
+      <a href="AdminPanel_Auction.html" class="btn btn-primary save_btn">Save and Return</a>
       </div>
     
     </div>
   </body>
+  <script>
+    $('#summernote').summernote({
+      placeholder: 'Hello Bootstrap 5',
+      tabsize: 2,
+      height: 200,
+      width:400
+    });
+  </script>
   <script src="/assets/js/javaScript.js"></script>
 </html>

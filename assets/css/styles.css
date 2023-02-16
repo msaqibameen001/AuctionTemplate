@@ -543,14 +543,12 @@ textarea{
   bottom: 20px;
 }
 
-.note-editor{
+
+
+.Summernote_Catalogue{
   position: relative;
-  top:-12px;
-  left: 315px;
+  left: 310px;
 }
-
-
-
 
 
 /* Catalogue Info */

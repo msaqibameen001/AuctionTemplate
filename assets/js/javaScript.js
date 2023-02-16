@@ -192,3 +192,28 @@ function Under(){
     })
 });
            
+
+// status btn
+function change(elem){
+  console.log("this a check")
+  // let elem=document.getElementById("Status_Btn");
+  // for(i of elem){
+    if(elem.value=="Unblock"){
+      elem.value="Blocked";
+      elem.innerHTML="Blocked"
+    }else {
+      elem.value="Unblock";
+      elem.innerHTML="Unblock";
+    // }
+  };
+  
+//   let btns=document.querySelectorAll('Status_Btn');
+
+// for (i of btns) {
+//      if(this.i.value=="Blocked"){
+//       this.i.value="Unblocked"
+//      }else{
+//       this.i.value="Blocked"
+//      }
+// }
+}

@@ -8,24 +8,24 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"
     />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row flex-nowrap">
+        <!-- Sidebar -->
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
           <div
             class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
@@ -55,7 +55,7 @@
 
               <li class="nav-item">
                 <a
-                  href="SuperAdminPanel.html"
+                  href="SuperAdminPanel_UserManagement.html"
                   class="nav-link align-middle px-0"
                 >
                   <i class="ri-user-add-line"></i>
@@ -79,7 +79,7 @@
                 >
                   <li class="w-100">
                     <a
-                      href="SuperAdminPanel_FavouriteAuct.html"
+                      href="SuperAdminPanel_Category.html"
                       class="nav-link px-0"
                     >
                       <i class="ri-price-tag-3-line"></i>
@@ -87,14 +87,14 @@
                     </a>
                   </li>
                   <li>
-                    <a href="SuperAdminPanel_MyAuct.html" class="nav-link px-0">
+                    <a href="SuperAdminPanel_SubCategory.html" class="nav-link px-0">
                       <i class="ri-file-list-line"></i>
                       <span class="d-none d-sm-inline">Sub Category</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      href="SuperAdminPanel_BoughtAuct.html"
+                      href="SuperAdminPanel_Brand.html"
                       class="nav-link px-0"
                     >
                       <i class="ri-book-line"></i>
@@ -103,7 +103,7 @@
                   </li>
                   <li>
                     <a
-                      href="SuperAdminPanel_BoughtAuct.html"
+                      href="SuperAdminPanel_EmailTemplate.html"
                       class="nav-link px-0"
                     >
                       <i class="ri-mail-line"></i>
@@ -129,7 +129,7 @@
                 >
                   <li class="w-100">
                     <a
-                      href="SuperAdminPanel_FavouriteAuct.html"
+                      href="SuperAdminPanel_Country.html"
                       class="nav-link px-0"
                     >
                       <i class="ri-map-pin-line"></i>
@@ -137,14 +137,14 @@
                     </a>
                   </li>
                   <li>
-                    <a href="SuperAdminPanel_MyAuct.html" class="nav-link px-0">
+                    <a href="SuperAdminPanel_State.html" class="nav-link px-0">
                       <i class="ri-map-2-line"></i>
                       <span class="d-none d-sm-inline">State</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      href="SuperAdminPanel_BoughtAuct.html"
+                      href="SuperAdminPanel_City.html"
                       class="nav-link px-0"
                     >
                       <i class="ri-building-4-line"></i>
@@ -215,10 +215,10 @@
             </div>
           </div>
         </div>
+        <!-- User Management Table --> 
         <div class="col py-3 ">
           <h3>User Management</h3>
           <div class="form-control my-3 col-sm-12 col">
-            <!-- Table Sorted -->
             <div class="row">
               <div class="UserManagement">
                 <div class="table_head">
@@ -264,8 +264,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
 
                     <tr>
@@ -276,8 +276,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -287,8 +287,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
@@ -298,8 +298,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
@@ -309,8 +309,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
@@ -320,8 +320,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
@@ -331,8 +331,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">8</th>
@@ -342,8 +342,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Bidder</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                     <tr>
                       <th scope="row">9</th>
@@ -353,8 +353,8 @@
                         <img src="/assets/img/h1.jpg" width="60px" alt="" />
                       </td>
                       <td>Seller</td>
-                      <td><a href="#" class="btn btn-success">Blocked</a></td>
-                      <td><a href="#" class="btn btn-primary">View</a></td>
+                      <td><a  class="btn btn-success " id="Status_Btn" onclick="change(this)" >Blocked</a></td>
+                      <td><a href="SuperAdminPanel_View_User.html" class="btn btn-primary">View</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -387,4 +387,5 @@
       </div>
     </div>
   </body>
+  <script src="/assets/js/javaScript.js"></script>
 </html>
