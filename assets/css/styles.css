@@ -621,6 +621,10 @@ body{
   z-index: 600;
 }
 
+.sidebar_text_color{
+  color: white;
+}
+
 @media (max-width: 991.98px) {
   .sidebar {
     width: 100%;
@@ -662,22 +666,80 @@ body{
 .Form_User2{
   grid-area: input2;
 }
+.Form_User3{
+  grid-area: input3;
+}
+.Form_User4{
+  grid-area: input4;
+}
+.Form_User5{
+  grid-area: input5;
+}
+.Form_User6{
+  grid-area: input6;
+}
+.Form_User7{
+  grid-area: input7;
+}
+.Form_User8{
+  grid-area: input8;
+}
+.Form_User9{
+  grid-area: input9;
+  
+}
+.Form_User9 textarea{
+  width:300px;
+  border-radius: 6px;
+}
+.Form_User10{
+  grid-area: input10;
+}
+.Form_User11{
+  grid-area: input11;
+
+}
+.Form_User13{
+  grid-area: input13;
+  /* margin-left: 150px; */
+}
+.Form_User13 textarea{
+  border-radius: 6px;
+}
 .FormUser{
   display:grid;
-  grid-template-areas: "input1 input2";
-  grid-template-columns: 513px 513px;
+  grid-template-areas: "input1 input2 input3"
+                          "input4 input5 input6"
+                          "input7 input8 input9"
+                          "input10 input11 input12"
+                          "input13 input13 input13" ;
+                       grid-template-rows: 86px 86px 86px 86px;
+  grid-template-columns: 319px 346px;
 }
-.FormUser label{
+/* .FormUser label{
   margin-right: 50px;
-}
-.FormUser input,.FormUser textarea,.FormUser .selectpicker{
-  width: 500px;
+} */
+.FormUser input,.FormUser .selectpicker{
+  width: 300px;
+  padding-left: 12px;
   border:1px solid rgb(187, 183, 183) ;
+  border-radius: 6px;
+  /* background-color: rgb(205, 237, 240); */
+  color: blue;
+  font-weight: bolder;
 }
 .Add_UserSaveBtn{
   position: relative;
   left: 300px;
   width: 20px;
+}
+
+/* Add user heading */
+.Add_user_heading img{
+  width: 10%;
+}
+.Add_user_heading{
+
 }
 
 /* super Admin message */
@@ -686,3 +748,5 @@ body{
   left: 250px;
   top: 0px
 }
+
+
