@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/FrontEnd.css" />
+       
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        
+        
+
+        <!-- <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js”></script> -->
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <title>Category Page</title>
+      </head>
+      <style>
+
+
+
+
+
+        .noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown_container,
+.instructions {
+  width: 200px;
+  margin: 20px auto 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+.instructions {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown_button {
+  float: left;
+  width: 100%;
+  background: whitesmoke;
+  padding: 10px 12px;
+
+  cursor: pointer;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+}
+
+.dropdown_label,
+.dropdown_quantity {
+  float: left;
+}
+
+.dropdown_quantity {
+  margin-left: 4px;
+}
+
+.fa-filter {
+  float: right;
+}
+
+
+.dropdown_list {
+  float: left;
+  width: 100%;
+
+  border: 1px solid lightgray;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+
+input[type="search"] {
+  padding: 5px 0;
+}
+
+.ul {
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+      </style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg row">
+        <img src="/assets/img/logo.jpg" class="navbar-brand logo" alt="FrontPage.html">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          hello</button> -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Store List</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Vendor</a>
+            </li>
+            <li class="nav-item dropdown ml-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Elements
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item ml-auto">
+              <a
+                type="button"
+                class="btn btn-outline-success mb-3 py-2"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Search
+              </a>
+            </li>
+            <li class="nav-item dropdown ml-1">
+              <a
+                class="nav-link dropdown-toggle btn btn-danger"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                type="button"
+              >
+                Sign In
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="BidderPanel.html">As Bidder</a>
+                <a class="dropdown-item" href="AdminPanel.html">As Admin</a>
+                <a class="dropdown-item" href="SuperAdminPanel.html">As SuperAdmin</a>
+              </div>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Search Modal Popover -->
+    <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Search Filter Sidebar and Cards-->
+  <div class="row" id="body-row" >
+    <!-- sidebar collapsible -->
+    <div id="sidebar-container" class="sidebar-expanded  d-md-block">
+        
+        <ul class="list-group">
+            
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <b>Search Filters</b>
+            </li>
+            
+             <a href="#" data-toggle="sidebar-colapse" class="bg-light list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                </div>
+            </a>
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-filter fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Filters</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            
+            <div id='submenu1' class="collapse sidebar-submenu card">
+            	<article class="card-group-item">
+            		<header class="card-header">
+            			<h6 class="title">Department </h6>
+            		</header>
+            		<!-- <div class="filter-content">
+            			<div class="card-body">
+            			<form>
+            				<label class="form-check">
+            				  <input class="form-check-input" type="checkbox" value="">
+            				  <span class="form-check-label">
+            				    Mersedes Benz
+            				  </span>
+            				</label> 
+            				<label class="form-check">
+            				  <input class="form-check-input" type="checkbox" value="">
+            				  <span class="form-check-label">
+            				    Nissan Altima
+            				  </span>
+            				</label>  
+            				<label class="form-check">
+            				  <input class="form-check-input" type="checkbox" value="">
+            				  <span class="form-check-label">
+            				    Another Brand
+            				  </span>
+            				</label>  
+            			</form>
+            			</div> 
+            		</div> -->
+                    <div class="dropdown_container">
+                        <div class="dropdown_button noselect">
+                          <div class="dropdown_label">States</div>
+                          <div class="dropdown_quantity">(<span class="quantity">Any</span>)</div>
+                <i class="fa fa-filter"></i>
+            </div>
+            <div class="dropdown_list" style="display: none;">
+                <input type="search" placeholder="Search states" class="dropdown_search"/>
+                <ul class="ul"></ul>
+            </div>
+        </div>
+            	</article> 
+            </div>
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-light list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fal fa-sitemap fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Layouts</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            
+            <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>            
+            <a href="#" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Functions</span>    
+                </div>
+            </a>
+            
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small>
+            </li>
+           
+            <a href="#" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-edit fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Edit Styles</span>
+                </div>
+            </a>
+           
+            <li class="list-group-item sidebar-separator menu-collapsed"></li>            
+            
+            <a href="#" class="bg-light list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Help</span>
+                </div>
+            </a>
+           
+        </ul>
+    </div>
+    <!--Cards Right Side  -->
+    <div class="col-9">
+        <!-- 3 cards per row -->
+        <div class="card-deck">
+            <div class="card loadCards">
+              <img src="/assets/img/car1.jpg" class="card-img-top" style="object-fit: cover;height: 12vw;" alt="...">
+              <div class="card-body border-0">
+                <a href="Item_Detail.html"><h5 class="card-title">Card title</h5></a>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn" style="background-color: aquamarine;width: 280px;">Bid Now</a>
+              </div>
+            </div>
+            <div class="card loadCards">
+              <img src="/assets/img/cat1.jpg" class="card-img-top" style="object-fit: cover;height: 12vw;"   alt="...">
+              <div class="card-body border-0 ">
+                <a href="Item_Detail.html"><h5 class="card-title">Card title</h5></a>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn" style="background-color: aquamarine;width: 280px;">Bid Now</a>
+              </div>
+            </div>
+            <div class="card loadCards">
+              <img src="/assets/img/cat4.jpg" class="card-img-top" style="object-fit: cover;height: 12vw;"  alt="...">
+              <div class="card-body border-0 ">
+                <a href="Item_Detail.html"><h5 class="card-title">Card title</h5></a>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn" style="background-color: aquamarine;width: 280px;">Bid Now</a>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- 3 cards per row -->
+        <div class="card-deck mt-5" >
+            <div class="card loadCards">
+              <img src="/assets/img/car1.jpg" class="card-img-top" style="object-fit: cover;height: 12vw;" alt="...">
+              <div class="card-body border-0">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn" style="background-color: aquamarine;width: 280px;">Bid Now</a>
+              </div>
+            </div>
+            <div class="card loadCards">
+              <img src="/assets/img/cat1.jpg" class="card-img-top" style="object-fit: cover;height: 12vw;"   alt="...">
+              <div class="card-body border-0">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn" style="background-color: aquamarine;width: 280px;">Bid Now</a>
+              </div>
+            </div>
+            <div class="card loadCards">
+              <img src="/assets/img/cat4.jpg" class="card-img-top" style="object-fit: cover;height: 12vw;"  alt="...">
+              <div class="card-body border-0">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn" style="background-color: aquamarine;width: 280px;">Bid Now</a>
+              </div>
+            </div>
+            </div>
+            <button onclick="loadMore()" id="loadmore" >Load More</button>
+           
+            
+    </div>
+  
+</div>
+
+<!-- Footer -->
+</body>
+
+
+
+
+<!--Script for Collapse Sidebar -->
+<script>
+    $('#body-row .collapse').collapse('hide'); 
+
+// Collapse/Expand icon
+$('#collapse-icon').addClass('fa-angle-double-left'); 
+
+// Collapse click
+$('[data-toggle=sidebar-colapse]').click(function() {
+    SidebarCollapse();
+});
+
+function SidebarCollapse () {
+    $('.menu-collapsed').toggleClass('d-none');
+    $('.sidebar-submenu').toggleClass('d-none');
+    $('.submenu-icon').toggleClass('d-none');
+    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+    
+    // Treating d-flex/d-none on separators with title
+    var SeparatorTitle = $('.sidebar-separator-title');
+    if ( SeparatorTitle.hasClass('d-flex') ) {
+        SeparatorTitle.removeClass('d-flex');
+    } else {
+        SeparatorTitle.addClass('d-flex');
+    }
+    
+    // Collapse/Expand icon
+    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+}
+</script>
+<script src="/assets/js/fjs.js"></script>
+<!-- Script for Searching -->
+<script>
+    let dropdowns = document.querySelectorAll('.dropdown-toggle')
+dropdowns.forEach((dd)=>{
+    dd.addEventListener('click', function (e) {
+        var el = this.nextElementSibling
+        el.style.display = el.style.display==='block'?'none':'block'
+    })
+})
+    $('.dropdown_container')
+	.on('click', '.dropdown_button', function() {
+        $(this).siblings('.dropdown_list').toggle();
+	})
+	.on('input', '.dropdown_search', function() {
+    	var target = $(this);
+        var dropdownList = target.closest('.dropdown_list');
+    	var search = target.val().toLowerCase();
+    
+    	if (!search) {
+            dropdownList.find('li').show();
+            return false;
+        }
+    
+    	dropdownList.find('li').each(function() {
+        	var text = $(this).text().toLowerCase();
+            var match = text.indexOf(search) > -1;
+            $(this).toggle(match);
+        });
+	})
+	.on('change', '[type="checkbox"]', function() {
+        var container = $(this).closest('.dropdown_container');
+        var numChecked = container. find('[type="checkbox"]:checked').length;
+    	container.find('.quantity').text(numChecked || 'Any');
+	});
+
+// JSON of States for demo purposes
+var usStates = [
+    { name: 'ALABAMA', abbreviation: 'AL'},
+    { name: 'ALASKA', abbreviation: 'AK'},
+    { name: 'AMERICAN SAMOA', abbreviation: 'AS'},
+    { name: 'ARIZONA', abbreviation: 'AZ'},
+    { name: 'ARKANSAS', abbreviation: 'AR'},
+    { name: 'CALIFORNIA', abbreviation: 'CA'},
+    { name: 'COLORADO', abbreviation: 'CO'},
+    { name: 'CONNECTICUT', abbreviation: 'CT'},
+    { name: 'DELAWARE', abbreviation: 'DE'},
+    { name: 'DISTRICT OF COLUMBIA', abbreviation: 'DC'},
+    { name: 'FEDERATED STATES OF MICRONESIA', abbreviation: 'FM'},
+    { name: 'FLORIDA', abbreviation: 'FL'},
+    { name: 'GEORGIA', abbreviation: 'GA'},
+    { name: 'GUAM', abbreviation: 'GU'},
+    { name: 'HAWAII', abbreviation: 'HI'},
+    { name: 'IDAHO', abbreviation: 'ID'},
+    { name: 'ILLINOIS', abbreviation: 'IL'},
+    { name: 'INDIANA', abbreviation: 'IN'},
+    { name: 'IOWA', abbreviation: 'IA'},
+    { name: 'KANSAS', abbreviation: 'KS'},
+    { name: 'KENTUCKY', abbreviation: 'KY'},
+    { name: 'LOUISIANA', abbreviation: 'LA'},
+    { name: 'MAINE', abbreviation: 'ME'},
+    { name: 'MARSHALL ISLANDS', abbreviation: 'MH'},
+    { name: 'MARYLAND', abbreviation: 'MD'},
+    { name: 'MASSACHUSETTS', abbreviation: 'MA'},
+    { name: 'MICHIGAN', abbreviation: 'MI'},
+    { name: 'MINNESOTA', abbreviation: 'MN'},
+    { name: 'MISSISSIPPI', abbreviation: 'MS'},
+    { name: 'MISSOURI', abbreviation: 'MO'},
+    { name: 'MONTANA', abbreviation: 'MT'},
+    { name: 'NEBRASKA', abbreviation: 'NE'},
+    { name: 'NEVADA', abbreviation: 'NV'},
+    { name: 'NEW HAMPSHIRE', abbreviation: 'NH'},
+    { name: 'NEW JERSEY', abbreviation: 'NJ'},
+    { name: 'NEW MEXICO', abbreviation: 'NM'},
+    { name: 'NEW YORK', abbreviation: 'NY'},
+    { name: 'NORTH CAROLINA', abbreviation: 'NC'},
+    { name: 'NORTH DAKOTA', abbreviation: 'ND'},
+    { name: 'NORTHERN MARIANA ISLANDS', abbreviation: 'MP'},
+    { name: 'OHIO', abbreviation: 'OH'},
+    { name: 'OKLAHOMA', abbreviation: 'OK'},
+    { name: 'OREGON', abbreviation: 'OR'},
+    { name: 'PALAU', abbreviation: 'PW'},
+    { name: 'PENNSYLVANIA', abbreviation: 'PA'},
+    { name: 'PUERTO RICO', abbreviation: 'PR'},
+    { name: 'RHODE ISLAND', abbreviation: 'RI'},
+    { name: 'SOUTH CAROLINA', abbreviation: 'SC'},
+    { name: 'SOUTH DAKOTA', abbreviation: 'SD'},
+    { name: 'TENNESSEE', abbreviation: 'TN'},
+    { name: 'TEXAS', abbreviation: 'TX'},
+    { name: 'UTAH', abbreviation: 'UT'},
+    { name: 'VERMONT', abbreviation: 'VT'},
+    { name: 'VIRGIN ISLANDS', abbreviation: 'VI'},
+    { name: 'VIRGINIA', abbreviation: 'VA'},
+    { name: 'WASHINGTON', abbreviation: 'WA'},
+    { name: 'WEST VIRGINIA', abbreviation: 'WV'},
+    { name: 'WISCONSIN', abbreviation: 'WI'},
+    { name: 'WYOMING', abbreviation: 'WY' }
+];
+
+// <li> template
+var stateTemplate = _.template(
+    '<li>' +
+    	'<input name="<%= abbreviation %>" type="checkbox">' +
+    	'<label for="<%= abbreviation %>"><%= capName %></label>' +
+    '</li>'
+);
+
+// Populate list with states
+_.each(usStates, function(s) {
+    s.capName = _.startCase(s.name.toLowerCase());
+    $('.ul').append(stateTemplate(s));
+});
+
+</script>
+<!-- Script for Load More Cards -->
+<script>
+  let visibleCards = 3;
+  let btn=document.getElementById("loadmore");
+  function toggleCards() {
+    const cards = document.querySelectorAll('.loadCards');
+    
+    cards.forEach((card, index) => {
+      if (index < visibleCards) {
+        card.style.display = "flex";
+      }
+       else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function loadMore() {
+    visibleCards += 3;
+    toggleCards();
+  }
+
+  window.onload = function() {
+    toggleCards();
+  };
+
+ 
+
+</script>
+</html>

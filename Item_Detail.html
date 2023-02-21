@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     
     
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,7 +31,7 @@
     
     
         
-        <title>Front End</title>
+        <title>Item Detail</title>
       </head>
 <body>
     <!-- Navbar -->
@@ -168,9 +171,9 @@
     <div class="col-12" style="margin-top: 100px;">
         <nav aria-label="breadcrumb" class="BreadCrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Library</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
+              <li class="breadcrumb-item"><a href="FrontPage.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Cars</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Rolls Royce Ghost</li>
             </ol>
             <h2 href="#" class="Title_Item">Lot#123:2023-RollsRoyce Phantom</h2>
           </nav>
@@ -186,43 +189,26 @@
 
 			<!-- Carousel -->
 			<div id="carousel" class="carousel slide gallery" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-slide-number="0" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/vbNTwfO9we0/1600x900.jpg">
-						<img src="https://source.unsplash.com/vbNTwfO9we0/1600x900.jpg" class="d-block w-100" alt="...">
+				
+        <div class="carousel-inner" >
+					<div class="carousel-item active" id="carousel-item1" data-slide-number="0" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/vbNTwfO9we0/1600x900.jpg">
+						<img src="https://source.unsplash.com/-RV5PjUDq9U/1600x900.jpg"  id="img1"  class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item" data-slide-number="1" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/DEhwkPYevhE/1600x900.jpg">
-						<img src="https://source.unsplash.com/DEhwkPYevhE/1600x900.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-item" id="carousel-item2" data-slide-number="1" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/DEhwkPYevhE/1600x900.jpg">
+						<img src="https://source.unsplash.com/sd0rPap7Uus/1600x900.jpg" id="img2" class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item" data-slide-number="2" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/-RV5PjUDq9U/1600x900.jpg">
-						<img src="https://source.unsplash.com/-RV5PjUDq9U/1600x900.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-item" id="carousel-item3" data-slide-number="2" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/-RV5PjUDq9U/1600x900.jpg">
+						<img src="https://source.unsplash.com/-RV5PjUDq9U/1600x900.jpg" id="img3" class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item" data-slide-number="3" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/sd0rPap7Uus/1600x900.jpg">
-						<img src="https://source.unsplash.com/sd0rPap7Uus/1600x900.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-item" id="carousel-item4" data-slide-number="3" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/sd0rPap7Uus/1600x900.jpg">
+						<img src="https://source.unsplash.com/sd0rPap7Uus/1600x900.jpg" id="img4" class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item" data-slide-number="4" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/kmRZFcZEMY8/1600x900.jpg">
-						<img src="https://source.unsplash.com/kmRZFcZEMY8/1600x900.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-item" id="carousel-item5" data-slide-number="4" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/kmRZFcZEMY8/1600x900.jpg">
+						<img src="https://source.unsplash.com/kmRZFcZEMY8/1600x900.jpg" id="img5" class="d-block w-100" alt="...">
 					</div>
-					<div class="carousel-item" data-slide-number="5" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/HJDdrWtlkIY/1600x900.jpg">
-						<img src="https://source.unsplash.com/HJDdrWtlkIY/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item" data-slide-number="6" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/VfuJpt81JZo/1600x900.jpg">
-						<img src="https://source.unsplash.com/VfuJpt81JZo/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item" data-slide-number="7" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/NLkXZQ7kHzI/1600x900.jpg">
-						<img src="https://source.unsplash.com/NLkXZQ7kHzI/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item" data-slide-number="8" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/bl4WNYGe2KE/1600x900.jpg">
-						<img src="https://source.unsplash.com/bl4WNYGe2KE/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item" data-slide-number="9" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/_8zfgT9kS2g/1600x900.jpg">
-						<img src="https://source.unsplash.com/_8zfgT9kS2g/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item" data-slide-number="10" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/enuCEimS1p4/1600x900.jpg">
-						<img src="https://source.unsplash.com/enuCEimS1p4/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item" data-slide-number="11" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/hZDtZkdXtek/1600x900.jpg">
-						<img src="https://source.unsplash.com/hZDtZkdXtek/1600x900.jpg" class="d-block w-100" alt="...">
-					</div>
+					<div class="carousel-item" id="carousel-item6" data-slide-number="5" data-toggle="lightbox" data-gallery="gallery" data-remote="https://source.unsplash.com/HJDdrWtlkIY/1600x900.jpg">
+						<img src="https://source.unsplash.com/HJDdrWtlkIY/1600x900.jpg" id="img6" class="d-block w-100" alt="...">
+					</div>	
 				</div>
 				<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -331,55 +317,291 @@
 
 
 <!-- Details -->
-  <div class="container Details_Accordion   ">
-    <div id="accordion" class="accordion">
-        <div class="card mb-0">
-            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                <a class="card-title">
-                    Item 1
-                </a>
-            </div>
-            <div id="collapseOne" class="card-body collapse" data-parent="#accordion" >
-                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </p>
-            </div>
-            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                <a class="card-title">
-                  Item 2
-                </a>
-            </div>
-            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion" >
-                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </p>
-            </div>
-            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                <a class="card-title">
-                  Item 3
-                </a>
-            </div>
-            <div id="collapseThree" class="collapse" data-parent="#accordion" >
-                <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS.
-                </div>
-            </div>
-            <div class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
-                <a class="card-title">
-                    Item 4
-                </a>
-            </div>
-            <div id="collapseFour" class="card-body collapse" data-parent="#accordion" >
-                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </p>
-            </div>
+<div class="container Details_Accordion">
+  <div id="accordion" class="accordion">
+      <div class="card mb-0">
+          <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+              <a class="card-title">
+                  Information
+              </a>
+          </div>
+          <div id="collapseOne" class="card-body collapse" data-parent="#accordion" >
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                  craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+          </div>
+          <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              <a class="card-title">
+                Auction Information
+              </a>
+          </div>
+          <div id="collapseTwo" class="card-body collapse" data-parent="#accordion" >
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                  craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+          </div>
+          <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+              <a class="card-title">
+                Terms and Conditions
+              </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion" >
+              <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS.
+              </div>
+          </div>
+          <div class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
+              <a class="card-title">
+                  Bid Increments
+              </a>
+          </div>
+          <div id="collapseFour" class="card-body collapse" data-parent="#accordion" >
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                  craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+          </div>
+          <div class="card-header collapsed" data-toggle="collapse" href="#collapseFive">
+            <a class="card-title">
+                Payment Information
+            </a>
         </div>
-    </div>
+        <div id="collapseFive" class="card-body collapse" data-parent="#accordion" >
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </p>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" href="#collapseSix">
+          <a class="card-title">
+              Shipping/Pick Up
+          </a>
+      </div>
+      <div id="collapseSix" class="card-body collapse" data-parent="#accordion" >
+          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </p>
+      </div>
+      </div>
+  </div>
 </div>
+
+
+
+<!-- You may Also Like Container -->
+<div class="Featured_of_detail_page">
+  <h2 class="Featured_heading_of_detail_page"><img src="/assets/img/feature.png" alt="">You May Like!</h2>
+  <a href="#" class="btn View_More_Featured_of_detail">View More</a>
+</div>
+<section class="Featured_Container_detail_page">
+  <div class="featured_item_of_detail_page">
+    <i class="ri-star-line"></i>
+    <img src="/assets/img/car1.jpg" alt="">
+    <img src="/assets/img/card_auc.png" style="width:80px;position: relative;left: 250px;top: -72px;" alt="">
+    <a href="#" >Corolla Xli 2018</a>
+    <hr>
+    <p class="card-text bid_buy_card">
+      <p class="bid_card">
+        <img src="/assets/img/bid.png" style="width: 60px;" alt="">
+        <span style="color:green;font-size: 20px;">Current Bid:</span>
+        <span style="font-size: 18px;">123,400$</span>
+        </p>
+      <p class="buy_card"><img src="/assets/img/buy.png" style="width:60px;" alt="">
+        <span style="color:red;font-size: 20px;">Buy Now:</span>
+        <span style="font-size: 18px;">12,340$</span>
+      </p>
+      <hr>
+    </p>
+    <p class="card-text">
+      <span class="bid_date">
+        <span id="clock3"></span>
+        </span>
+      <span class="total_bids" style="color: green;">
+        <span>340 bids</span>
+      </span>
+      <hr>
+    </p>
+    <button  class=" col btn btn-cool-blues1 ">Submit a Bid</button>
+  </div>
+
+  <div class="featured_item_of_detail_page">
+    <i class="ri-star-line"></i>
+    <img src="/assets/img/car1.jpg" alt="">
+    <img src="/assets/img/card_auc.png" style="width:80px;position: relative;left: 250px;top: -72px;" alt="">
+    <a href="#" >Corolla Xli 2018</a>
+    <hr>
+    <p class="card-text bid_buy_card">
+      <p class="bid_card">
+        <img src="/assets/img/bid.png" style="width: 60px;" alt="">
+        <span style="color:green;font-size: 20px;">Current Bid:</span>
+        <span style="font-size: 18px;">123,400$</span>
+        </p>
+      <p class="buy_card"><img src="/assets/img/buy.png" style="width:60px;" alt="">
+        <span style="color:red;font-size: 20px;">Buy Now:</span>
+        <span style="font-size: 18px;">12,340$</span>
+      </p>
+      <hr>
+    </p>
+    <p class="card-text">
+      <span class="bid_date">
+        <span id="clock4"></span>
+        </span>
+      <span class="total_bids" style="color: green;">
+        <span>340 bids</span>
+      </span>
+      <hr>
+    </p>
+    <button  class=" col btn btn-cool-blues1 ">Submit a Bid</button>
+  </div>
+
+  <div class="featured_item_of_detail_page">
+    <i class="ri-star-line"></i>
+    <img src="/assets/img/car1.jpg" alt="">
+    <img src="/assets/img/card_auc.png" style="width:80px;position: relative;left: 250px;top: -72px;" alt="">
+    <a href="#" >Corolla Xli 2018</a>
+    <hr>
+    <p class="card-text bid_buy_card">
+      <p class="bid_card">
+        <img src="/assets/img/bid.png" style="width: 60px;" alt="">
+        <span style="color:green;font-size: 20px;">Current Bid:</span>
+        <span style="font-size: 18px;">123,400$</span>
+        </p>
+      <p class="buy_card"><img src="/assets/img/buy.png" style="width:60px;" alt="">
+        <span style="color:red;font-size: 20px;">Buy Now:</span>
+        <span style="font-size: 18px;">12,340$</span>
+      </p>
+      <hr>
+    </p>
+    <p class="card-text">
+      <span class="bid_date">
+        <span id="clock5"></span>
+        </span>
+      <span class="total_bids" style="color: green;">
+        <span>340 bids</span>
+      </span>
+      <hr>
+    </p>
+    <button  class=" col btn btn-cool-blues1 ">Submit a Bid</button>
+  </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="top: 4px !important;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum facilis ea soluta non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe in enim doloremque repudiandae id fugiat voluptatem quos consequatur asperiores pariatur.
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">About Eyecon </h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+          <span><a href="https://facebook.com"><img src="/assets/img/facebook.png" width="40px" alt=""></a></span>
+          <span><a href="https://instagram.com"><img src="/assets/img/insta.jpg" width="40px" alt=""></span></a>
+          <span><a href="https://linkedin.com"><img src="/assets/img/linkedin.png" width="40px" alt=""></a></span>
+          <span><a href="https://twitter.com"><img src="/assets/img/twitter.png" width="40px" alt=""></a></span>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Auction Categories</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2023 Copyright:
+    <a href="/"> Syed Muhammad Huzaifa</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+
 </body>
 <script src="/assets/js/fjs.js"></script>
 <script>
@@ -419,4 +641,86 @@
       }
     }, 1000);
     </script>
+
+
+  <script>
+    const container1 = document.getElementById("carousel-item1");
+    const container2 = document.getElementById("carousel-item2");
+    const container3 = document.getElementById("carousel-item3");
+    const container4 = document.getElementById("carousel-item4");
+    const container5 = document.getElementById("carousel-item5");
+    const container6 = document.getElementById("carousel-item6");
+    
+
+    const img1 = document.getElementById("img1");
+    const img2 = document.getElementById("img2");
+    const img3 = document.getElementById("img3");
+    const img4 = document.getElementById("img4");
+    const img5 = document.getElementById("img5");
+    const img6 = document.getElementById("img6");
+    
+
+container1.addEventListener("mousemove", onZoom);
+container2.addEventListener("mousemove", onZoom);
+container3.addEventListener("mousemove", onZoom);
+container4.addEventListener("mousemove", onZoom);
+container5.addEventListener("mousemove", onZoom);
+container6.addEventListener("mousemove", onZoom);
+
+container1.addEventListener("mouseover", onZoom);
+container2.addEventListener("mouseover", onZoom);
+container3.addEventListener("mouseover", onZoom);
+container4.addEventListener("mouseover", onZoom);
+container5.addEventListener("mouseover", onZoom);
+container6.addEventListener("mouseover", onZoom);
+
+container1.addEventListener("mouseleave", offZoom);
+container2.addEventListener("mouseleave", offZoom);
+container3.addEventListener("mouseleave", offZoom);
+container4.addEventListener("mouseleave", offZoom);
+container5.addEventListener("mouseleave", offZoom);
+container6.addEventListener("mouseleave", offZoom);
+
+function onZoom(e) {
+    const x = e.clientX - e.target.offsetLeft;
+    const y = e.clientY - e.target.offsetTop;
+
+    // console.log(x, y)
+
+    img1.style.transformOrigin = `${x}px ${y}px`;
+    img2.style.transformOrigin = `${x}px ${y}px`;
+    img3.style.transformOrigin = `${x}px ${y}px`;
+    img4.style.transformOrigin = `${x}px ${y}px`;
+    img5.style.transformOrigin = `${x}px ${y}px`;
+    img6.style.transformOrigin = `${x}px ${y}px`;
+    img1.style.transform = "scale(2.5)";
+    img2.style.transform = "scale(2.5)";
+    img3.style.transform = "scale(2.5)";
+    img4.style.transform = "scale(2.5)";
+    img5.style.transform = "scale(2.5)";
+    img6.style.transform = "scale(2.5)";
+}
+
+function offZoom(e) {
+    img1.style.transformOrigin = `center center`;
+    img1.style.transform = "scale(1)";
+
+    img2.style.transformOrigin = `center center`;
+    img2.style.transform = "scale(1)";
+
+    img3.style.transformOrigin = `center center`;
+    img3.style.transform = "scale(1)";
+
+    img4.style.transformOrigin = `center center`;
+    img4.style.transform = "scale(1)";
+
+    img5.style.transformOrigin = `center center`;
+    img5.style.transform = "scale(1)";
+
+    img6.style.transformOrigin = `center center`;
+    img6.style.transform = "scale(1)";
+
+
+}
+  </script>
 </html>

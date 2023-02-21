@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/FrontEnd.css" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+        
+        <title>Contact Us</title>
+      </head>
+      <style>
+        body{
+    margin-top:20px;
+    background:#eee;
+}
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    color: #fff;
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+      </style>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg row">
+        <img src="/assets/img/logo.jpg" class="navbar-brand logo" alt="FrontPage.html">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          hello</button> -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Store List</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Vendor</a>
+            </li>
+            <li class="nav-item dropdown ml-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Elements
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item ml-auto">
+              <a
+                type="button"
+                class="btn btn-outline-success mb-3 py-2"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Search
+              </a>
+            </li>
+            <li class="nav-item dropdown ml-1">
+              <a
+                class="nav-link dropdown-toggle btn btn-danger"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                type="button"
+              >
+                Sign In
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="BidderPanel.html">As Bidder</a>
+                <a class="dropdown-item" href="AdminPanel.html">As Admin</a>
+                <a class="dropdown-item" href="SuperAdminPanel.html">As SuperAdmin</a>
+              </div>
+          </ul>
+        </div>
+      </nav>
+    <!-- Search Modal Popover -->
+    <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bread Crumb -->
+  <div class="row">
+    <div class="col-12" style="margin-top: 100px;">
+        <nav aria-label="breadcrumb" class="BreadCrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="FrontPage.html">Home</a></li>
+              
+              <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+            <h1 href="#" style="text-align: center;color: #6470ef;font-size: 70px;font-weight: bolder;">Contact Us</h1>
+          </nav>
+    </div>
+  </div>
+
+
+    <!--Section: Contact v.2-->
+    <div class="container">
+        <div class="contact__wrapper shadow-lg mt-n9">
+            <div class="row no-gutters">
+                <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+                    <h3 class="color--white mb-5">Get in Touch</h3>
+        
+                    <ul class="contact-info__list list-style--none position-relative z-index-101">
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-envelope"></i></span> support@bootdey.com
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-phone"></i></span> (021)-241454-545
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span> bootdey Technologies Inc.
+                            <br> 2694 Queen City Rainbow Drive
+                            <br> Florida 99161
+        
+                            <div class="mt-3">
+                                <a href="https://www.google.com/maps" target="_blank" class="text-link link--right-icon text-white">Get directions <i class="link__icon fa fa-directions"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <figure class="figure position-absolute m-0 opacity-06 z-index-100" style="bottom:0; right: 10px">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444px" height="626px">
+                            <defs>
+                                <linearGradient id="PSgrad_1" x1="0%" x2="81.915%" y1="57.358%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+                                    <stop offset="100%" stop-color="rgb(0,54,207)" stop-opacity="0"></stop>
+                                </linearGradient>
+        
+                            </defs>
+                            <path fill-rule="evenodd" opacity="0.302" fill="rgb(72, 155, 248)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+                            <path fill="url(#PSgrad_1)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+                        </svg>
+                    </figure>
+                </div>
+        
+                <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+                    <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Wendy">
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Appleseed">
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="wendy.apple@seed.com">
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(021)-454-545">
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="message">How can we help?</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Hi there, I would like to....."></textarea>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-12 mb-3">
+                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                            </div>
+        
+                        </div>
+                    </form>
+                </div>
+                <!-- End Contact Form Wrapper -->
+        
+            </div>
+        </div>
+    </div>
+<!--Section: Contact v.2-->
+</body>
+<script src="/assets/js/fjs.js"></script>
+</html>
+

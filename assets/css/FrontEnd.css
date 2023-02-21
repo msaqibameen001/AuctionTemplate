@@ -157,6 +157,7 @@ overflow-x: hidden;
     background-color:#6b84f3;
 }
 
+
 /* Featured */
 .Featured_Cat{
     position: relative;
@@ -276,13 +277,48 @@ overflow-x: hidden;
     z-index: -1;
     opacity: 0.2;
   }
+  .Featured_Container_detail_page::before {
+    top: 0;
+    left: 0;
+    content: "";
+    background: url("/assets/img/back.jpg") ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+  }
   .Featured_Container{
     position: relative;
     display: flex;
     top: 300px;
     height: 900px;
   }
+  .Featured_Container_detail_page{
+    position: relative;
+    display: flex;
+    /* top: 300px; */
+    height: 900px;
+  }
   .featured_item{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-left: 1px solid rgb(170, 166, 166);
+    border-right: 1px solid rgb(170, 166, 166);
+    border-bottom:1px solid rgb(170, 166, 166);
+    border-top: 1px solid rgb(170, 166, 166);
+    margin-right: 80px;
+    margin-left: 42px;
+    box-shadow: 1px 3px 6px 5px rgb(206, 203, 203);
+    position: relative;
+    top: 120px;
+    height: 650px;
+    background-color: rgb(232, 235, 238) ;
+    /* padding-right: 30px; */
+  }
+  .featured_item_of_detail_page{
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
@@ -307,15 +343,36 @@ overflow-x: hidden;
     color: black;
     margin-left: -54px !important;
   }
+  .featured_item_of_detail_page a{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: black;
+    margin-left: -54px !important;
+  }
   .Featured{
     position: relative;
     top: 420px;
     left: 30px;
   }
+  .Featured_heading_of_detail_page{
+    position: relative;
+    top: 120px;
+    left: 30px;
+  }
   .Featured_heading img{
     width: 60px;
   }
+  .Featured_heading_of_detail_page img{
+    width: 60px;
+  }
   .Featured_heading{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    left: 30px;
+  }
+  .Featured_heading_of_detail_page{
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     font-weight: bolder;
@@ -360,7 +417,16 @@ overflow-x: hidden;
     border: 1px solid #6b84f3 !important;
     z-index: 1;
 }
-
+.View_More_Featured_of_detail{
+  position: relative;
+  left: 1100px;
+  top: 80px;
+  width: 120px;
+  border-radius: 22px !important;
+  color: Black !important;
+  border: 1px solid #6b84f3 !important;
+  z-index: 1;
+}
 .Before_Footer {
     position:relative;
     top: 400px;
@@ -570,3 +636,96 @@ overflow-x: hidden;
     color: #fff;
     text-decoration: none;
   }
+  .featured_item_of_detail_page i{
+    position: relative;
+    left: 300px;
+}
+
+.Details_Accordion a{
+  color: #02053a !important;
+  font-weight: bolder;
+  font-size: 23px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+
+
+
+
+
+
+/* Category Page Sidebars etc. */
+#body-row {
+  margin-left:0;
+  margin-right:0;
+  position: absolute;
+  top: 100px;
+}
+
+#sidebar-container {
+  min-height: 100vh;   
+  background-color: white;
+  padding: 0;
+ 
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+  width: 230px;
+}
+.sidebar-collapsed {
+  width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+  height: 50px;
+  color: black;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+  height: 45px;
+  padding-left: 30px;
+}
+.sidebar-submenu {
+  font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+  /*background-color: #333;*/
+  height: 35px;
+}
+.sidebar-separator {
+  /*background-color: #333;*/
+  height: 25px;
+}
+.logo-separator {
+  /*background-color: #333;    */
+  height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+content: " \f0d7";
+font-family: FontAwesome;
+display: inline;
+text-align: right;
+padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+content: " \f0da";
+font-family: FontAwesome;
+display: inline;
+text-align: right;
+padding-left: 10px;
+}
+
+#body-col {
+  background-color: #333;
+}
+
+
+
