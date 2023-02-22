@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/FrontEnd.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg row form-group">
+        <img src="/assets/img/logo.jpg" class="navbar-brand logo" alt="FrontPage.html">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          hello</button> -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="FrontPage.html">Home</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Store List</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" href="#">Vendor</a>
+            </li>
+            <li class="nav-item dropdown ml-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Elements
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown mr-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item ml-auto">
+              <a
+                type="button"
+                class="btn btn-outline-success mb-3 py-2"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Search
+              </a>
+            </li>
+            <li class="nav-item dropdown ml-1">
+              <a
+                class="nav-link dropdown-toggle btn btn-danger"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                type="button"
+              >
+                Sign In
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="BidderPanel.html">As Bidder</a>
+                <a class="dropdown-item" href="AdminPanel.html">As Admin</a>
+                <a class="dropdown-item" href="SuperAdminPanel.html">As SuperAdmin</a>
+              </div>
+          </ul>
+        </div>
+      </nav>
+    <!-- Search Modal Popover -->
+    <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Picture of About Us -->
+  <div class="row">
+  <div class="col-12 AboutUs" >
+    <h1 class="AboutUsHeading">About Us</h1>
+    <p id="picPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
+  </div>
+</div>
+  <!-- Bread Crumb -->
+  <div class="row">
+    <div class="col-12">
+        <img aria-label="breadcrumb" class="BreadCrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="FrontPage.html">Home</a></li>
+              
+              <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>          
+    </div>
+  </div>
+
+  <!-- Details -->
+  <h1 id="How">How We Work</h1>
+  <div class="row">
+    <div class="col-3">
+        <img src="/assets/img/con1.jpg" style="opacity: 0.7;border-radius: 120px;" width="300px" height="170px" alt="" class="ml-2">
+    </div>
+    <div class="col-9">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima quos expedita repellat, mollitia ducimus cum recusandae, amet aut, molestias rem. Natus nesciunt quaerat quos facere, harum, quibusdam deleniti nihil voluptas nobis impedit doloremque iste. At molestiae mollitia nulla voluptas consectetur ut animi! Laboriosam fuga placeat neque aliquam quidem accusantium dolor dolore unde harum quasi eaque porro labore explicabo deserunt esse, assumenda exercitationem dolorem quam voluptas amet temporibus nesciunt voluptatum! Provident labore dolorem et perspiciatis error nisi nulla, sed consequuntur quam placeat deserunt itaque eveniet! Molestiae expedita est ab magnam voluptatum voluptatem, fugiat nulla reprehenderit cumque, quos et consectetur temporibus provident alias explicabo iure ex rem velit cum repellat deserunt earum animi illum. Nulla quos corrupti impedit harum vero nesciunt, saepe voluptates molestiae aliquam omnis sit pariatur suscipit, blanditiis iure?</p>
+    </div>
+  </div>
+
+  <!-- Details -->
+  <h1 id="How" class="mt-4">Internet Bidding</h1>
+  <div class="row">
+    <div class="col-9">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima quos expedita repellat, mollitia ducimus cum recusandae, amet aut, molestias rem. Natus nesciunt quaerat quos facere, harum, quibusdam deleniti nihil voluptas nobis impedit doloremque iste. At molestiae mollitia nulla voluptas consectetur ut animi! Laboriosam fuga placeat neque aliquam quidem accusantium dolor dolore unde harum quasi eaque porro labore explicabo deserunt esse, assumenda exercitationem dolorem quam voluptas amet temporibus nesciunt voluptatum! Provident labore dolorem et perspiciatis error nisi nulla, sed consequuntur quam placeat deserunt itaque eveniet! Molestiae expedita est ab magnam voluptatum voluptatem, fugiat nulla reprehenderit cumque, quos et consectetur temporibus provident alias explicabo iure ex rem velit cum repellat deserunt earum animi illum. Nulla quos corrupti impedit harum vero nesciunt, saepe voluptates molestiae aliquam omnis sit pariatur suscipit, blanditiis iure?</p>
+    </div>
+    <div class="col-3">
+        <img src="/assets/img/con1.jpg" style="opacity: 0.7;border-radius: 120px;" width="300px" height="170px" alt="" class="ml-2">
+    </div>
+  </div>
+
+  <!-- Team Members -->
+  <h1 id="How">Team Members</h1>
+  <div class="TeamContainer">
+    <div class="member">
+        <img src="/assets/img/user.png" alt="">
+        <h3>Designation*</h3>
+        <p>Sppecialities in their specific designation</p>
+        <div class="connect">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-google-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+    </div>
+    <div class="member">
+        <img src="/assets/img/user.png" alt="">
+        <h3>Designation*</h3>
+        <p>Sppecialities in their specific designation</p>
+        <div class="connect">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-google-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill ri-facebook"></i></a>
+           
+        </div>
+    </div>
+    <div class="member">
+        <img src="/assets/img/user.png" alt="">
+        <h3>Designation*</h3>
+        <p>Sppecialities in their specific designation</p>
+        <div class="connect">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-google-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+    </div>
+  </div>
+
+  <!-- before footer of About Us Page-->
+  <section class="Before_FooterAbout">
+    <div class="before_footer_containerAbout">
+      <a href="SignIn.html" class="btn Register_btn">Register</a>
+      <p id="before_footer_headingAbout">Register For Free and start Bidding Now!</p>
+      <p id="bef_foot_para">You Think, and We Have It All.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="top: 101px !important;">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum facilis ea soluta non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe in enim doloremque repudiandae id fugiat voluptatem quos consequatur asperiores pariatur.
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">About Eyecon </h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="AboutUs.html">Link 1</a>
+            </li>
+            <li>
+              <a href="AboutUs.html">Link 2</a>
+            </li>
+            <li>
+              <a href="AboutUs.html">Link 3</a>
+            </li>
+            <li>
+              <a href="AboutUs.html">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Contact Us</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="ContactUs.html">Link 1</a>
+            </li>
+            <li>
+              <a href="ContactUs.html">Link 2</a>
+            </li>
+            <li>
+              <a href="ContactUs.html">Link 3</a>
+            </li>
+            <li>
+              <a href="ContactUs.html">Link 4</a>
+            </li>
+            <span><a href="https://facebook.com"><img src="/assets/img/facebook.png" width="40px" alt=""></a></span>
+            <span><a href="https://instagram.com"><img src="/assets/img/insta.jpg" width="40px" alt=""></span></a>
+            <span><a href="https://linkedin.com"><img src="/assets/img/linkedin.png" width="40px" alt=""></a></span>
+            <span><a href="https://twitter.com"><img src="/assets/img/twitter.png" width="40px" alt=""></a></span>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Auction Categories</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright:
+      <a href="/"> Syed Muhammad Huzaifa</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  </body>
+  <script src="/assets/js/fjs.js"></script>
+</html>

@@ -23,6 +23,12 @@
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>Document</title>
   </head>
+  <style>
+    .bootstrap-select{
+      width: 300px !important;
+      border-radius: 6px !important;
+    }
+  </style>
   <body>
     <div class="container-fluid">
       <div class="row flex-nowrap">
@@ -225,85 +231,88 @@
               <div class="Form_User1">
                 <label for=""><b> Name</b></label>
                 <br />
-                <input type="text" value="Mark" />
-              </div>
-              <div class="Form_User14">
-                <label for=""><b>Slug Name</b></label>
-                <br />
-                <input type="text" value="MM" />
+                <input type="text" value="Mark" disabled/>
               </div>
               <div class="Form_User2">
-                <label for=""><b> State</b></label>
+                <label for=""><b>Slug Name</b></label>
                 <br />
-                <input type="text" value="America" />
+                <input type="text" value="MM" disabled/>
               </div>
-
               <div class="Form_User3">
                 <label for=""><b> UserName</b></label>
                 <br />
-                <input type="text" value="Hello" />
+                <input type="text" value="Hello" disabled />
               </div>
               <div class="Form_User4">
-                <label for=""><b> City</b></label>
+                <label for=""><b> Country</b></label>
                 <br />
-                <input type="text" value="new york" />
+                <input type="text" value="New York" disabled />
+              </div>
+              <div class="Form_User5">
+                <label for=""><b> State</b></label>
+                <br />
+                <input type="text" value="America" disabled />
               </div>
 
-              <div class="Form_User5">
-                <label for=""><b> Email</b></label>
-                <br />
-                <input type="text" value="aa@gmail.com"/>
-              </div>
               <div class="Form_User6">
-                <label for=""><b>Address</b></label>
+                <label for=""><b> City</b></label>
                 <br />
-                <textarea name="" id="" cols="10" rows="2">flat C/2 4</textarea>
+                <input type="text" value="new york" disabled/>
               </div>
 
               <div class="Form_User7">
-                <label for=""><b> Password</b></label>
+                <label for=""><b> Email</b></label>
                 <br />
-                <input type="text" value="********"/>
+                <input type="text" value="aa@gmail.com" disabled/>
               </div>
               <div class="Form_User8">
+                <label for=""><b> Password</b></label>
+                <br />
+                <input type="text" value="********" disabled/>
+              </div>
+              <div class="Form_User9">
+                <label for=""><b>Address</b></label>
+                <br />
+                <textarea name="" id="" cols="10" rows="2" disabled>4c2 karachi</textarea>
+              </div>
+
+              <div class="Form_User10" >
                 <label for=""><b> Status</b></label>
                 <br />
                 <select
-                  class="selectpicker border border-dark"
+                  class="selectpicker border " style="width: 300px !important;"
                   aria-label="Default select example"
-                  data-live-search="true"
+                  data-live-search="true" disabled
                 >
-                  <option value="1" selected>Select Status</option>
-                  <option value="2">Approve</option>
+                  <option value="1" >Select Status</option>
+                  <option value="2" selected>Approve</option>
                   <option value="3">Disapprove</option>
                 </select>
               </div>
 
-              
-              
-
-              <div class="Form_User10">
+              <div class="Form_User11" style="width:300px;">
                 <label for=""><b> Role</b></label>
                 <br />
                 <select
+                
                   class="selectpicker border"
                   aria-label="Default select example"
-                  data-live-search="true"
+                  data-live-search="true" disabled
                 >
-                  <option value="1" selected>Select Role</option>
-                  <option value="2">Super Admin</option>
+                  <option value="1">Select Role</option>
+                  <option value="2" selected>Super Admin</option>
                   <option value="3">Admin</option>
                   <option value="4">Bidder</option>
                 </select>
               </div>
-              <div class="Form_User11">
+              <!-- <div class="Form_User11">
                 <label for=""><b> Phone Number</b></label>
                 <br />
-                <input type="text" value="+922 3322234010" />
-              </div>
+                <input type="text" value="+922 3322234010" disabled/>
+              </div> -->
 
               
-              <div class="Form_User13">
+              <div class="Form_User12">
                 <label for=""><b> Select Image</b></label>
                 <br />
                 <input
@@ -314,14 +323,14 @@
                   multiple
                 />
               </div>
-              <div class="Form_User15">
+              <div class="Form_User13">
                 <label for=""><b>Terms and Conditions</b></label>
                 <br />
-                <textarea name="" id="" cols="10" rows="3"></textarea>
+                <textarea name="" id="" cols="20" rows="6" disabled>terms and conditions</textarea>
               </div>
               <div class="d-grid gap-2 d-md-block">  
-              <a class="btn btn-primary" href="SuperAdminPanel_UserManagement.html" type="reset" >Save and Return</a>
-            </div>
+                <a class="btn"  style="background-color: #3d5a5a; color: white; position: relative;left: 934px;" href="SuperAdminPanel_UserManagement.html" type="reset" >Save and Return</a>
+              </div>
             </div>
           </div>
         </form>
